@@ -1,0 +1,79 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<!-- saved from url=(0026)https://testsmt.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta name="GENERATOR" content="Mozilla/4.77 [en] (X11; U; Linux 2.4.9-12 i686) [Netscape]">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  <title>Project Machine Translation Testing</title>
+</head>
+<body bgcolor="#ffffff" data-gr-c-s-loaded="true">
+
+<link type="text/css" rel="stylesheet" href="./style.css">
+
+<font face="ariel,helvetica">
+
+<h2>Machine Translation Testing</h2>
+
+<h3>Team</h3>
+<ul>
+<li><a href="https://people.inf.ethz.ch/suz">Zhendong Su</a></li>
+<li><a href="https://pinjiahe.github.io/">Pinjia He</a></li>
+<li><a href="https://www.linkedin.com/in/clara-meister/">Clara Meister</a></li>
+<li><a href="https://www.cse.iitb.ac.in/~shashijgupta/">Shashij Gupta</a></li>
+</ul>
+
+<h3>Project Goal</h3> 
+
+Machine translation software has increasingly been integrated into our daily lives. People routinely use machine translation for various applications, such as describing symptoms to a foreign doctor and reading political news in a foreign language. However, the complexity and intractability of neural machine translation (NMT) models that power modern machine translation make the robustness of these systems difficult to even assess, much less guarantee. Machine translation systems can return inferior results that lead to misunderstanding, medical misdiagnoses, threats to personal safety, or political conflicts. Despite its apparent importance, validating the robustness of machine translation systems is very difficult and has, therefore, been much under-explored. 
+
+<p>
+To tackle this challenge, we introduce two novel testing approaches for validating machine translation software: <i>structure-invariant testing (SIT)</i> [1] and <i>testing via pathological invariance (PatInv)</i> [2]. The key insights are:
+
+<p>
+<li>SIT: translation results of "similar" source sentences should typically exhibit similar sentence structures.</li> 
+<li>PatInv: source sentences with different meanings should not have the same translation.</li>
+
+<p>
+Our approaches have successfully found around 300 translation errors from Google Translate and Bing Microsoft Translator respectively. The translation errors are diverse, including under-translation, over-translation, incorrect modification, word/phrase mistranslation, and unclear logic. 
+
+<p>
+
+We have maintained our continuous, extensive effort in stress-testing
+Google Translate and Bing Microsoft Translator to benefit the developer, user, and research
+communities:
+
+
+
+
+Please follow us on
+twitter <a href="https://twitter.com/testmachinetra1">@testmachinetra1</a> for
+important project developments and regular tweets about interesting
+bugs in Google Translate and Bing Microsoft Translator.
+
+<h3>Publications</h3>
+
+[1] <a href="https://arxiv.org/abs/1907.08710">
+  <b>Structure-Invariant Testing for Machine Translation</b></a>.<br> 
+Pinjia He, Clara Meister and Zhendong Su<br> 
+In <i>Proceedings of ICSE'20</i>, Seoul, South Korea, July 2020. <br>
+
+<p>
+
+[2] <a href="http://testtranslation.github.io"><b>Machine Translation Testing via Pathological Invariance</b></a>. 
+<br> 
+Shashij Gupta, Pinjia He, Clara Meister and Zhendong Su<br> 
+In <i>Proceedings of ESEC/FSE'20</i>, Sacramento, California, United States, Nov. 2020.<br>
+
+
+</font>
+
+
+
+<br>
+
+<tt>last modified: 2020.05.26</tt>
+
+
+</body></html>
