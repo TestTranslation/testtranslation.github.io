@@ -1,0 +1,122 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<!-- saved from url=(0026)https://testsmt.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta name="GENERATOR" content="Mozilla/4.77 [en] (X11; U; Linux 2.4.9-12 i686) [Netscape]">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://testsmt.github.io/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://testsmt.github.io/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://testsmt.github.io/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://testsmt.github.io/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://testsmt.github.io/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://testsmt.github.io/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://testsmt.github.io/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://testsmt.github.io/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://testsmt.github.io/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://testsmt.github.io/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://testsmt.github.io/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://testsmt.github.io/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://testsmt.github.io/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://testsmt.github.io/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  <title>Project Yin-Yang</title>
+</head>
+<body bgcolor="#ffffff" data-gr-c-s-loaded="true">
+
+<link type="text/css" rel="stylesheet" href="./Project Yin-Yang_files/style.css">
+
+<font face="ariel,helvetica">
+
+<h2>Project Yin-Yang for SMT Solver Testing</h2>
+
+<h3>Team</h3>
+<ul>
+<li><a href="https://people.inf.ethz.ch/suz">Zhendong Su</a></li>
+<li><a href="https://wintered.github.io/">Dominik Winterer</a></li>
+<li><a href="http://chengyuzhang.com/">Chengyu Zhang</a></li>
+</ul>
+
+<h3>Project Goal</h3> 
+
+Satisfiability Modulo Theory (SMT) solvers are foundational tools for
+many subareas of computer science, including formal verification,
+programming languages, and software engineering. Their reliability and
+robustness are crucial, especially for the safety-critical
+domains. However, effectively validating SMT solvers has been a
+longstanding challenge.  The goal of Project Yin-Yang is to develop
+novel, effective, practical methods and techniques to help make SMT
+solvers more reliable, powerful, and usable.
+
+To this end, we have introduced two novel, highly effective techniques
+for stress-testing SMT solvers: <i>semantic fusion</i> [1]
+and <i>type-aware operator mutation</i> [2]. The key idea behind
+semantic fusion is to systematically combine two existing
+equisatisfiable (i.e., both satisfiable or unsatisfiable) formulas
+into a new formula that, by construction, preserves
+satisfiability. Type-aware operator mutation is a simple, general,
+unusually effective approach for differentially testing SMT solvers by
+generating diverse type-correct formulas.
+
+YinYang and OpFuzz, the realizations of semantic fusion and type-aware
+operator mutation, have demonstrated their remarkable effectiveness by
+having already <b>found 1,000+ bugs in Z3 and CVC4</b>, the two
+state-of-the-art SMT solvers.
+
+<p>
+
+We have maintained our continuous, extensive effort in stress-testing
+Z3 and CVC4 to benefit the SMT solver developer, user, and research
+communities:
+
+</p><p>
+
+</p><p>[Summary: <b>1012</b> (total) / <b>582</b> (fixed)]<br>
+</p><p>[Z3 bugs: <b>761</b> (total) / <b>460</b> (fixed)]<br>
+[CVC4 bugs: <b>251</b> (total) / <b>122</b> (fixed)]<br>
+</p><p>[Bugs in default mode (Z3): <b>441</b> (total) / <b>311</b> (fixed)]<br>
+[Bugs in default mode (CVC4): <b>109</b> (total) / <b>58</b> (fixed)]<br>
+</p><p>[Soundness bugs (Z3): <b>229</b> (total) / <b>121</b> (fixed)]<br>
+[Soundness bugs (CVC4): <b>30 </b> (total) / <b>17 </b> (fixed)]<br>
+
+</p><p>Report links:
+  Semantic Fusion (<a href="https://testsmt.github.io/yinyang_bugs.html">link</a>),
+  Type-aware Operator Mutation (<a href="https://testsmt.github.io/opfuzz_bugs.html">link</a>)
+</p>
+
+Please follow us on
+twitter <a href="https://twitter.com/testsmtsolvers">@testsmt</a> for
+important project developments and regular tweets about interesting
+bugs in Z3 and CVC4.
+
+<h3>Publications</h3>
+
+[1] <a href="https://wintered.github.io/papers/winterer-zhang-su-pldi20.pdf">
+  <b>Validating SMT Solvers via Semantic Fusion</b></a>.<br> 
+Dominik Winterer<sup>*</sup>, Chengyu Zhang<sup>*</sup> and Zhendong Su<br> 
+In <a href="https://testsmt.github.io/"><i>Proceedings of PLDI'20</i></a>, London, UK, June 2020. <br>
+<div style="font-size:10pt; margin-top:5pt;margin-bottom:-10pt "><sup>*</sup>
+  Both authors contributed equally to this work.
+</div>
+<p>
+</p><div>
+    <img src="./Project Yin-Yang_files/award.png" width="36" style="vertical-align:middle">
+    <font color="red"><b>Distinguished Paper Award</b></font>
+</div>
+<p></p>
+[2] <a href="http://arxiv.org/pdf/2004.08799"><b>On the Unusual Effectiveness of Type-aware Mutations for Testing SMT Solvers</b></a>. 
+<br> 
+Dominik Winterer<sup>*</sup>, Chengyu Zhang<sup>*</sup> and Zhendong Su<br> 
+<i> CoRR, abs/2004.08799, 2020. </i> <br>
+<div style="font-size:10pt; margin-top:5pt"><sup>*</sup> Both authors contributed equally to this work. </div>
+
+</font>
+
+
+
+<br>
+
+<tt>last modified: 2020.05.15</tt>
+
+
+</body></html>
