@@ -3,20 +3,6 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
     <meta name="GENERATOR" content="Mozilla/4.77 [en] (X11; U; Linux 2.4.9-12 i686) [Netscape]">
-    <link rel="apple-touch-icon" sizes="57x57" href="https://testsmt.github.io/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://testsmt.github.io/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://testsmt.github.io/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://testsmt.github.io/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://testsmt.github.io/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://testsmt.github.io/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://testsmt.github.io/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://testsmt.github.io/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://testsmt.github.io/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://testsmt.github.io/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://testsmt.github.io/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://testsmt.github.io/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://testsmt.github.io/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://testsmt.github.io/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -42,13 +28,14 @@
 
 Machine translation software has increasingly been integrated into our daily lives. People routinely use machine translation for various applications, such as describing symptoms to a foreign doctor and reading political news in a foreign language. However, the complexity and intractability of neural machine translation (NMT) models that power modern machine translation make the robustness of these systems difficult to even assess, much less guarantee. Machine translation systems can return inferior results that lead to misunderstanding, medical misdiagnoses, threats to personal safety, or political conflicts. Despite its apparent importance, validating the robustness of machine translation systems is very difficult and has, therefore, been much under-explored. 
 
-
+<p>
 To tackle this challenge, we introduce two novel testing approaches for validating machine translation software: <i>structure-invariant testing (SIT)</i> [1] and <i>testing via pathological invariance (PatIve)</i> [2]. The key insights are:
 
+<p>
 <li>SIT: the translation results of ``similar'' source sentences should typically exhibit similar sentence structures.</li> 
 <li>PatInv: source sentences with different meanings should not have the same translation.</li>
 
-
+<p>
 Our approaches have successfully found around 300 translation errors from Google Translate and Bing Microsoft Translator respectively. The translation errors are diverse, including under-translation, over-translation, incorrect modification, word/phrase mistranslation, and unclear logic. 
 
 <p>
